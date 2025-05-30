@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB62D38D-10A1-4153-A047-122A220CA295}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdoptopiaMT</RootNamespace>
+    <AssemblyName>AdoptopiaMT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adopcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adopcion.Designer.cs">
+      <DependentUpon>Adopcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdoptopiaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdoptopiaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donacion.Designer.cs">
+      <DependentUpon>Donacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entradaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entradaprincipal.Designer.cs">
+      <DependentUpon>Entradaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lasmascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lasmascotas.Designer.cs">
+      <DependentUpon>Lasmascotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarA.Designer.cs">
+      <DependentUpon>ListarA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarD.Designer.cs">
+      <DependentUpon>ListarD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarE.Designer.cs">
+      <DependentUpon>ListarE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarM.Designer.cs">
+      <DependentUpon>ListarM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listarma.Designer.cs">
+      <DependentUpon>Listarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarR.Designer.cs">
+      <DependentUpon>ListarR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota.Designer.cs">
+      <DependentUpon>Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masmascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masmascotas.Designer.cs">
+      <DependentUpon>Masmascotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recepcion.Designer.cs">
+      <DependentUpon>Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sobrenosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobrenosotros.Designer.cs">
+      <DependentUpon>Sobrenosotros.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adopcion.resx">
+      <DependentUpon>Adopcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donacion.resx">
+      <DependentUpon>Donacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entradaprincipal.resx">
+      <DependentUpon>Entradaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lasmascotas.resx">
+      <DependentUpon>Lasmascotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarA.resx">
+      <DependentUpon>ListarA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarD.resx">
+      <DependentUpon>ListarD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarE.resx">
+      <DependentUpon>ListarE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarM.resx">
+      <DependentUpon>ListarM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listarma.resx">
+      <DependentUpon>Listarma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarR.resx">
+      <DependentUpon>ListarR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota.resx">
+      <DependentUpon>Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masmascotas.resx">
+      <DependentUpon>Masmascotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recepcion.resx">
+      <DependentUpon>Recepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobrenosotros.resx">
+      <DependentUpon>Sobrenosotros.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AdoptopiaDataSet.xsc">
+      <DependentUpon>AdoptopiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet.xss">
+      <DependentUpon>AdoptopiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet1.xsc">
+      <DependentUpon>AdoptopiaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet1.xss">
+      <DependentUpon>AdoptopiaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet2.xsc">
+      <DependentUpon>AdoptopiaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet2.xss">
+      <DependentUpon>AdoptopiaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet3.xsc">
+      <DependentUpon>AdoptopiaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet3.xss">
+      <DependentUpon>AdoptopiaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet4.xsc">
+      <DependentUpon>AdoptopiaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet4.xss">
+      <DependentUpon>AdoptopiaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet5.xsc">
+      <DependentUpon>AdoptopiaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet5.xss">
+      <DependentUpon>AdoptopiaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet6.xsc">
+      <DependentUpon>AdoptopiaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet6.xss">
+      <DependentUpon>AdoptopiaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet7.xsc">
+      <DependentUpon>AdoptopiaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet7.xss">
+      <DependentUpon>AdoptopiaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet8.xsc">
+      <DependentUpon>AdoptopiaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AdoptopiaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdoptopiaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdoptopiaDataSet8.xss">
+      <DependentUpon>AdoptopiaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{b4bf241e-9b0c-478a-9e66-2c1c99e379cb}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-marco-de-flores-amarillas-y-verdes-bordes-y-marcos-contenido-gratuito-palabras-de-compasion-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-de-atencion-al-cliente-el-estilo-de-esquema-w6ghna-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-marco-de-flores-amarillas-y-verdes-bordes-y-marcos-contenido-gratuito-palabras-de-compasion__2_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-animal-shelter-related-to-volunteering-symbol-comic-style-help-and-support-friendship-vector-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\554795.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujos-de-perritos-png-transparent-png-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05d20bb5-f64d-4cbe-a607-149bed3d7f7f_16-9-aspect-ratio_default_0-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-cartoon-dog-puppy-sticker-png-image_9029372.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70ac8c63e43ab8d80284b9c922e25b48-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1653826510_995351_1653826595_noticia_normal_recorte1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\como_saber_si_mi_husky_es_puro_50564_orig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9074017_paw_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9073941_heart_circle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raza-de-perro-pomerania-blog-de-pampermut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chihuahua-de-color-blanco-y-tostado_4093fa98_22115144814_900x900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\como_es_el_temperamento_del_bichon_maltes_52616_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shemsu_Sotis_Perun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iStock-501597845-e1664121183957-1024x819.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raza-pekines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sitesdefaultfilesstylessquare_medium_440x440public2022-09Parson20Russell20Terrier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-cartoon-puppy-png-image_2610797-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet adoption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet adoption1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004798_arrow_direction_right_next_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5402405_track_next_ui_media_forward_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186409_arrow_right_next_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-siames.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\como_es_el_gato_azul_ruso_22207_600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-birmano_5d9cb986_230412112714_1000x1500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fotolia_82719975.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-bombay_2ce041eb_230328173123_900x900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-bombay_953c56a7_230328173355_1000x667.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-britanico-de-pelo-corto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato-sin-pelo_00000000_230405095919_900x900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\753144_cats_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
