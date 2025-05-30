@@ -57,5 +57,6 @@ namespace BLL
         {
             return conexion.BuscarDb(string.Format("select {0} from recepcion where {1}",campo,condicion));
         }
+        //milva
     }
 }
